@@ -14,7 +14,7 @@ Follow the slide structure, content guidelines, evaluation criteria, CSS classes
 4. Keep slide text concise (max 5 bullets, max 10 words each)
 5. Include real stats, real customer names, real competitive comparisons
 6. Presenter notes must include transition phrases and objection-handling tips
-7. Use Samuel Tauil's name and contact info (samueltauil@microsoft.com, github.com/samueltauil) — never use placeholders
+7. Use Samuel Tauil's name and contact info (samuel.tauil@microsoft.com, github.com/samueltauil) — never use placeholders
 8. Use emojis sparingly (1-2 per slide max). Prefer CSS classes (`gradient-text`, `tag`, `check-green`, `cross-dim`) for visual polish
 9. Do NOT modify anything outside the `<div class="slides">` container
 8. Do NOT add external images or dependencies

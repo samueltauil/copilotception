@@ -11,7 +11,7 @@ When asked to generate, create, or fill in the presentation, you MUST produce a 
 ## Presenter Information
 
 - **Name**: Samuel Tauil
-- **Email**: samueltauil@microsoft.com
+- **Email**: samuel.tauil@microsoft.com
 - **GitHub**: @samueltauil
 - **Role**: Microsoft
 
@@ -137,7 +137,7 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 ### Slide 11 — Call to Action
 - Class: `center-slide`
 - Clear next step: "Start a free trial" / "Let's set up a POC" / "Book a deeper dive"
-- Contact: Samuel Tauil — samueltauil@microsoft.com — github.com/samueltauil
+- Contact: Samuel Tauil — samuel.tauil@microsoft.com — github.com/samueltauil
 - A memorable closing line
 - Notes: Be direct. Suggest specific next steps. Offer to set up a pilot.
 
