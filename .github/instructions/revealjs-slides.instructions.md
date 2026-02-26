@@ -37,17 +37,24 @@ Use these classes defined in the template's `<style>` block:
 | Class | Purpose | Usage |
 |-------|---------|-------|
 | `center-slide` | Centers all text (title/closing slides) | `<section class="center-slide">` |
-| `stat-number` | Large blue number for statistics | `<span class="stat-number">55%</span>` |
-| `highlight-box` | Blue-bordered box for key points | `<div class="highlight-box">...</div>` |
+| `stat-number` | Large gradient number for statistics | `<span class="stat-number">55%</span>` |
+| `gradient-text` | Copilot purple-blue gradient text for emphasis | `<span class="gradient-text">key phrase</span>` |
+| `highlight-box` | Subtle bordered box for key points | `<div class="highlight-box">...</div>` |
 | `two-column` | Side-by-side grid layout | `<div class="two-column"><div>Left</div><div>Right</div></div>` |
-| `competitor-table` | Styled comparison table | `<table class="competitor-table">...</table>` |
-| `emoji-icon` | Slightly enlarged emoji | `<span class="emoji-icon">🚀</span>` |
+| `competitor-table` | GitHub-styled comparison table | `<table class="competitor-table">...</table>` |
+| `tag` | Pill-shaped label (purple) | `<span class="tag">Enterprise</span>` |
+| `check-green` | Green checkmark text | `<span class="check-green">✓</span>` |
+| `cross-dim` | Dimmed cross for competitor gaps | `<span class="cross-dim">✗</span>` |
+| `copilot-logo` | Centered logo container | `<div class="copilot-logo">...</div>` |
 
 ## Content Rules
 
 - Max 5 bullet points per slide
 - Max 10 words per bullet point
 - Use `<h2>` for slide titles (not `<h1>` except the title slide)
-- No external images — use emoji and CSS for visual interest
+- No external images — use inline SVG, Unicode, or CSS for visuals
+- Use emojis sparingly — max 1-2 per slide, only when they add meaning
+- Prefer CSS classes (`gradient-text`, `tag`, `check-green`) over emojis for visual polish
 - Write real content, never placeholders
 - HTML only — no Markdown plugin usage
+- Use `check-green` / `cross-dim` in competitor tables instead of emoji ✅/❌

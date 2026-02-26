@@ -2,9 +2,20 @@
 
 ## Project Purpose
 
-This project is a **Reveal.js presentation** that pitches **GitHub Copilot** to a customer audience. The presenter is a Microsoft employee delivering a compelling sales pitch.
+This project is a **Reveal.js presentation** that pitches **GitHub Copilot** to a customer audience. The presenter is **Samuel Tauil** from Microsoft.
 
 When asked to generate, create, or fill in the presentation, you MUST produce a complete set of Reveal.js slides inside `src/index.html` by replacing the placeholder comment block with `<section>` elements.
+
+---
+
+## Presenter Information
+
+- **Name**: Samuel Tauil
+- **Email**: samueltauil@microsoft.com
+- **GitHub**: @samueltauil
+- **Role**: Microsoft
+
+Use this information on the title slide and call-to-action slide. Do NOT use placeholder text like "Your Name" — always use Samuel Tauil's real details.
 
 ---
 
@@ -43,7 +54,7 @@ The pitch must be **easy to follow and well structured**.
 - Narrative arc: Problem → Impact → Solution → Differentiation → Proof → Call to Action.
 - Each slide should transition naturally to the next.
 - Use short, punchy text on slides. NO walls of text. Bullet points max 5 per slide.
-- Visual aids: emoji icons, stat callouts, comparison tables.
+- Visual aids: stat callouts, comparison tables, CSS-styled elements. Use emojis sparingly — at most 1-2 per slide and only when they add clarity, not decoration.
 
 ### 5. Proof / Credibility
 **Examples or outcomes that build confidence**.
@@ -62,18 +73,19 @@ The presentation must **sound ready for a real customer conversation**.
 
 ## Slide Structure (MANDATORY)
 
-Generate exactly these slides in this order. Each slide is a `<section>` element. Use the CSS classes defined in the template (`center-slide`, `stat-number`, `highlight-box`, `two-column`, `competitor-table`, `emoji-icon`).
+Generate exactly these slides in this order. Each slide is a `<section>` element. Use the CSS classes defined in the template (`center-slide`, `stat-number`, `highlight-box`, `two-column`, `competitor-table`, `github-icon`).
 
 ### Slide 1 — Title Slide
 - Class: `center-slide`
+- Include the GitHub Copilot SVG logo using the `.copilot-logo` class (an `<svg>` inline of the GitHub Copilot icon, or the Octocat mark) styled in the Copilot purple-blue gradient
 - Title: "GitHub Copilot" with a subtitle about AI-powered development
-- Presenter name placeholder: "Your Name | Microsoft"
+- Presenter: "Samuel Tauil | Microsoft"
 - Notes: Quick intro, set the stage, mention what you'll cover
 
 ### Slide 2 — The Problem
 - Title: a provocative question or bold statement about developer productivity challenges
 - 3-4 bullet points describing the pain (talent gap, slow onboarding, context switching, technical debt)
-- Use emoji-icon spans for visual interest
+- Use CSS-styled bullet markers (the `github-icon` class) instead of heavy emoji usage
 - Notes: Expand on each pain point, ask rhetorical questions, connect to audience
 
 ### Slide 3 — The Cost of Inaction
@@ -106,7 +118,7 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 - Notes: Don't trash competitors, but highlight unique strengths. Mention multi-model and coding agent.
 
 ### Slide 8 — Enterprise Ready
-- 4-5 enterprise features as bullet points with emoji icons
+- 4-5 enterprise features as bullet points (use `github-icon` styled markers, not emojis)
 - SSO/SCIM, IP indemnity, content exclusions, audit logs, policy controls, admin dashboard
 - A brief mention of FedRAMP / compliance readiness
 - Notes: This slide closes security/compliance objections. Emphasize IP indemnity.
@@ -125,7 +137,7 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 ### Slide 11 — Call to Action
 - Class: `center-slide`
 - Clear next step: "Start a free trial" / "Let's set up a POC" / "Book a deeper dive"
-- Contact info placeholder
+- Contact: Samuel Tauil — samueltauil@microsoft.com — github.com/samueltauil
 - A memorable closing line
 - Notes: Be direct. Suggest specific next steps. Offer to set up a pilot.
 
@@ -141,10 +153,11 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 1. **File to edit**: `src/index.html` — replace the placeholder comment block with slide `<section>` elements. Do NOT touch anything outside the `<div class="slides">` container (head, scripts, styles are already set up).
 2. **Speaker notes**: Every slide MUST have `<aside class="notes">` with 3-6 sentences of talking points. Notes should include what to say, how to transition, and any objection-handling tips.
 3. **Press S** to open speaker/presenter view — remind user of this.
-4. **No external images** — use emoji, Unicode symbols, or CSS-styled elements for visual interest.
+4. **No external images** — use inline SVG, Unicode symbols, or CSS-styled elements for visual interest. Use emojis sparingly (1-2 per slide max, only for clarity).
 5. **Keep slide text concise** — max 5 bullet points per slide, max 10 words per bullet.
-6. **Use the CSS utility classes** already defined in the `<style>` block: `center-slide`, `stat-number`, `highlight-box`, `two-column`, `competitor-table`, `emoji-icon`.
+6. **Use the CSS utility classes** already defined in the `<style>` block: `center-slide`, `stat-number`, `highlight-box`, `two-column`, `competitor-table`, `github-icon`, `copilot-logo`, `gradient-text`.
 7. **HTML only** — do not use the Markdown plugin for slides. Write raw HTML `<section>` elements.
+8. **GitHub branding** — the presentation uses GitHub's dark theme colors. Use the Copilot purple-blue gradient (`gradient-text` class) for emphasis text. Use `github-icon` class for styled bullet markers instead of emojis.
 
 ---
 
