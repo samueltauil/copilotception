@@ -1,0 +1,10 @@
+{
+  "name": "copilotception",
+  "version": "1.0.0",
+  "description": "GitHub Copilot pitch presentation built with Reveal.js",
+  "scripts": {
+    "start": "npx serve src -l 8000 --no-clipboard",
+    "dev": "npx serve src -l 8000 --no-clipboard"
+  },
+  "private": true
+}

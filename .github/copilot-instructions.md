@@ -1,0 +1,169 @@
+# Copilotception — Repository Instructions
+
+## Project Purpose
+
+This project is a **Reveal.js presentation** that pitches **GitHub Copilot** to a customer audience. The presenter is a Microsoft employee delivering a compelling sales pitch.
+
+When asked to generate, create, or fill in the presentation, you MUST produce a complete set of Reveal.js slides inside `src/index.html` by replacing the placeholder comment block with `<section>` elements.
+
+---
+
+## Presentation Topic
+
+**GitHub Copilot** — the AI-powered developer tool by GitHub (Microsoft). The pitch should cover what it is, the problems it solves, why it matters, why Microsoft/GitHub wins against competitors, and proof points that build credibility. The audience is a technical decision-maker at a company evaluating AI coding assistants.
+
+---
+
+## Evaluation Criteria (MUST satisfy ALL)
+
+The presentation is scored on these 6 criteria. Every slide must serve at least one criterion. Design the narrative to maximize every score.
+
+### 1. Problem Clarity
+The customer's problem must be **clear, relevant, and compelling**.
+- Lead with the pain: developer productivity bottleneck, talent shortage, slow onboarding, context-switching overhead, technical debt accumulation.
+- Use concrete scenarios the audience will recognize.
+
+### 2. Value Articulation
+Clearly explain **why GitHub Copilot matters** to the customer.
+- Translate features into business outcomes: faster delivery, reduced costs, happier developers, lower attrition.
+- Use the "So what?" test — every claim must connect to customer value.
+
+### 3. Microsoft Differentiation
+Make it **crystal clear why Microsoft/GitHub wins** vs. alternatives (Cursor, Tabnine, Amazon CodeWhisperer/Q, JetBrains AI, Codeium/Windsurf).
+- Deepest IDE integration (VS Code, Visual Studio, JetBrains, Neovim, Xcode).
+- Enterprise-grade: SSO, IP indemnity, content exclusions, audit logs, policy controls.
+- Copilot ecosystem: Chat, CLI, PR summaries, code review, workspace agents, MCP, extensions, coding agent.
+- Backed by OpenAI partnership + Azure AI infrastructure.
+- Multi-model: can use Claude, Gemini, OpenAI models — the customer chooses.
+- Largest training signal: GitHub hosts 100M+ developers, 420M+ repos.
+- GitHub Copilot coding agent (autonomous issue-to-PR agent).
+
+### 4. Storytelling & Flow
+The pitch must be **easy to follow and well structured**.
+- Narrative arc: Problem → Impact → Solution → Differentiation → Proof → Call to Action.
+- Each slide should transition naturally to the next.
+- Use short, punchy text on slides. NO walls of text. Bullet points max 5 per slide.
+- Visual aids: emoji icons, stat callouts, comparison tables.
+
+### 5. Proof / Credibility
+**Examples or outcomes that build confidence**.
+- Customer case studies: Accenture (developer happiness up 30%), Mercado Libre (shipping 2x faster), Duolingo, Shopify, Dow.
+- Stats: 55% faster task completion (GitHub research), 46% of new code written by Copilot (across users), 1.3M+ paying businesses.
+- Testimonials or quotes if possible.
+- Mention Fortune 500 adoption and enterprise traction.
+
+### 6. Pitch Readiness
+The presentation must **sound ready for a real customer conversation**.
+- Professional, confident tone. Not salesy — consultative.
+- Presenter notes must include talking points, transition phrases, and objection-handling tips.
+- End with a clear call to action (trial, POC, next meeting).
+
+---
+
+## Slide Structure (MANDATORY)
+
+Generate exactly these slides in this order. Each slide is a `<section>` element. Use the CSS classes defined in the template (`center-slide`, `stat-number`, `highlight-box`, `two-column`, `competitor-table`, `emoji-icon`).
+
+### Slide 1 — Title Slide
+- Class: `center-slide`
+- Title: "GitHub Copilot" with a subtitle about AI-powered development
+- Presenter name placeholder: "Your Name | Microsoft"
+- Notes: Quick intro, set the stage, mention what you'll cover
+
+### Slide 2 — The Problem
+- Title: a provocative question or bold statement about developer productivity challenges
+- 3-4 bullet points describing the pain (talent gap, slow onboarding, context switching, technical debt)
+- Use emoji-icon spans for visual interest
+- Notes: Expand on each pain point, ask rhetorical questions, connect to audience
+
+### Slide 3 — The Cost of Inaction
+- Use `stat-number` class for 2-3 impactful statistics (e.g., "60% of dev time isn't coding", "$85B lost to bad DX annually")
+- Brief framing text around each stat
+- Notes: Let the numbers sink in, pause after each stat, connect to their specific context
+
+### Slide 4 — Introducing GitHub Copilot
+- What it is in one sentence
+- 3-4 key capabilities as `highlight-box` items (code completion, chat, CLI, PR reviews)
+- Notes: Demo-style talking points — describe what it feels like to use it
+
+### Slide 5 — How It Works (30-second version)
+- Simple 3-step flow: Context → AI Model → Suggestion
+- Mention multi-model (GPT-4o, Claude, Gemini)
+- Keep it visual and simple — not overly technical
+- Notes: Adjust depth to audience tech-savviness
+
+### Slide 6 — Business Impact / Value
+- Use `two-column` layout
+- Left: developer outcomes (speed, quality, satisfaction)
+- Right: business outcomes (delivery velocity, cost savings, retention)
+- Each item backed by a specific number or case study reference
+- Notes: Bridge from "cool tech" to "business case" — this is where you win the exec
+
+### Slide 7 — Why GitHub Copilot Wins (Differentiation)
+- Use `competitor-table` for a comparison matrix: GitHub Copilot vs. Cursor vs. Amazon Q vs. Tabnine
+- Dimensions: IDE coverage, Enterprise security, Ecosystem breadth, Model choice, IP indemnity, Autonomous agents
+- GitHub Copilot should clearly lead in most dimensions
+- Notes: Don't trash competitors, but highlight unique strengths. Mention multi-model and coding agent.
+
+### Slide 8 — Enterprise Ready
+- 4-5 enterprise features as bullet points with emoji icons
+- SSO/SCIM, IP indemnity, content exclusions, audit logs, policy controls, admin dashboard
+- A brief mention of FedRAMP / compliance readiness
+- Notes: This slide closes security/compliance objections. Emphasize IP indemnity.
+
+### Slide 9 — Customer Proof Points
+- 2-3 mini case studies with company name, metric, and outcome
+- Use `highlight-box` for each
+- Mention broad adoption: 1.3M+ businesses, Fortune 500 companies
+- Notes: Name-drop relevant customers. Adapt to audience's industry if possible.
+
+### Slide 10 — The Copilot Ecosystem
+- Show breadth: Copilot in IDE, Chat, CLI, PR Reviews, Code Review, Workspace, Extensions, MCP, Coding Agent
+- Brief one-liner for each
+- Notes: Emphasize this is a platform, not a point tool. Mention extensibility.
+
+### Slide 11 — Call to Action
+- Class: `center-slide`
+- Clear next step: "Start a free trial" / "Let's set up a POC" / "Book a deeper dive"
+- Contact info placeholder
+- A memorable closing line
+- Notes: Be direct. Suggest specific next steps. Offer to set up a pilot.
+
+### Slide 12 — Thank You / Q&A
+- Class: `center-slide`
+- "Thank You" + invite questions
+- Notes: Transition phrases for Q&A, common questions and answers to prepare for
+
+---
+
+## Reveal.js Technical Rules
+
+1. **File to edit**: `src/index.html` — replace the placeholder comment block with slide `<section>` elements. Do NOT touch anything outside the `<div class="slides">` container (head, scripts, styles are already set up).
+2. **Speaker notes**: Every slide MUST have `<aside class="notes">` with 3-6 sentences of talking points. Notes should include what to say, how to transition, and any objection-handling tips.
+3. **Press S** to open speaker/presenter view — remind user of this.
+4. **No external images** — use emoji, Unicode symbols, or CSS-styled elements for visual interest.
+5. **Keep slide text concise** — max 5 bullet points per slide, max 10 words per bullet.
+6. **Use the CSS utility classes** already defined in the `<style>` block: `center-slide`, `stat-number`, `highlight-box`, `two-column`, `competitor-table`, `emoji-icon`.
+7. **HTML only** — do not use the Markdown plugin for slides. Write raw HTML `<section>` elements.
+
+---
+
+## Tone & Language
+
+- **Professional and consultative**, not aggressive sales.
+- **Confident** — speak as someone who knows the product deeply.
+- **Customer-centric** — frame everything around their outcomes, not Microsoft features.
+- Use "you" and "your team" in slide text. Avoid "we" (Microsoft) dominating.
+- Presenter notes should be conversational — as if coaching someone to deliver the pitch.
+
+---
+
+## What NOT to Do
+
+- Do NOT create additional files — only modify `src/index.html`.
+- Do NOT add npm dependencies or change package.json.
+- Do NOT change the Reveal.js theme, plugins, or configuration.
+- Do NOT use Markdown slides — use HTML `<section>` elements.
+- Do NOT use external images or assets.
+- Do NOT generate more than 12 slides (keep it tight for a ~15 minute pitch).
+- Do NOT add generic placeholder text like "Lorem ipsum" — every word must be real content.

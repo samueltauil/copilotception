@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Copilot — Pitch Presentation</title>
+
+  <!-- Reveal.js core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+  <!-- Theme – dark professional look -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme" />
+  <!-- Syntax highlighting for code blocks -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css" />
+
+  <style>
+    /* Custom overrides — keep the GitHub / Copilot branding feel */
+    :root {
+      --r-background-color: #0d1117;
+      --r-main-color: #c9d1d9;
+      --r-heading-color: #58a6ff;
+      --r-link-color: #58a6ff;
+    }
+    .reveal .slides section {
+      text-align: left;
+    }
+    .reveal .slides section.center-slide {
+      text-align: center;
+    }
+    .reveal h1, .reveal h2, .reveal h3 {
+      text-transform: none;
+    }
+    .stat-number {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #58a6ff;
+    }
+    .highlight-box {
+      background: rgba(88,166,255,0.1);
+      border-left: 4px solid #58a6ff;
+      padding: 1em;
+      margin: 0.5em 0;
+      border-radius: 4px;
+    }
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+    }
+    .competitor-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+    .competitor-table th, .competitor-table td {
+      border: 1px solid #30363d;
+      padding: 0.5em;
+    }
+    .competitor-table th {
+      background: rgba(88,166,255,0.15);
+    }
+    .emoji-icon {
+      font-size: 1.3em;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!--
+        ╔══════════════════════════════════════════════════════════════╗
+        ║  SLIDES GO HERE                                            ║
+        ║                                                            ║
+        ║  Copilot: Replace this comment block with all the          ║
+        ║  presentation slides. Follow the structure defined in      ║
+        ║  .github/copilot-instructions.md exactly.                  ║
+        ║                                                            ║
+        ║  Each slide is a <section> element.                        ║
+        ║  Vertical stacks use nested <section> elements.            ║
+        ║  Speaker notes use <aside class="notes"> inside slides.    ║
+        ║                                                            ║
+        ║  Example slide:                                            ║
+        ║  <section>                                                 ║
+        ║    <h2>Slide Title</h2>                                    ║
+        ║    <p>Content here</p>                                     ║
+        ║    <aside class="notes">                                   ║
+        ║      Speaker notes — what to say during this slide.        ║
+        ║    </aside>                                                ║
+        ║  </section>                                                ║
+        ╚══════════════════════════════════════════════════════════════╝
+      -->
+
+    </div>
+  </div>
+
+  <!-- Reveal.js core + plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      showNotes: false,        // notes visible only in speaker view (press S)
+      transition: 'slide',
+      transitionSpeed: 'default',
+      controlsTutorial: false,
+      plugins: [
+        RevealNotes,
+        RevealHighlight,
+        RevealMarkdown
+      ]
+    });
+  </script>
+</body>
+</html>
