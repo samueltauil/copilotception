@@ -49,8 +49,12 @@ Use these classes defined in the template's `<style>` block:
 
 ## Content Rules
 
-- Max 5 bullet points per slide
-- Max 10 words per bullet point
+- **CRITICAL: All slide content must fit within 960×700px without scrolling**
+- Max 4 bullet points per slide (5 only in two-column, per column)
+- Max 8 words per bullet point
+- Max 4 highlight-box elements per slide, each limited to 1 line of text
+- Max 3 stat blocks on stat slides
+- Competitor table: max 6 rows, 3-4 words per cell
 - Use `<h2>` for slide titles (not `<h1>` except the title slide)
 - No external images — use inline SVG, Unicode, or CSS for visuals
 - Use emojis sparingly — max 1-2 per slide, only when they add meaning

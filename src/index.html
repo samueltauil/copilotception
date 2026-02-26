@@ -117,6 +117,31 @@
     .cross-dim {
       color: #484f58;
     }
+    /* Prevent slide content from overflowing the viewport */
+    .reveal .slides section {
+      font-size: 0.75em;
+    }
+    .reveal .slides section h1 {
+      font-size: 1.8em;
+    }
+    .reveal .slides section h2 {
+      font-size: 1.4em;
+      margin-bottom: 0.4em;
+    }
+    .reveal .slides section h3 {
+      font-size: 1.0em;
+    }
+    .reveal .slides section p,
+    .reveal .slides section li {
+      line-height: 1.4;
+    }
+    .highlight-box {
+      padding: 0.5em 0.8em;
+      margin: 0.35em 0;
+    }
+    .stat-number {
+      font-size: 2em;
+    }
   </style>
 </head>
 <body>
@@ -163,6 +188,9 @@
       transition: 'slide',
       transitionSpeed: 'default',
       controlsTutorial: false,
+      width: 960,
+      height: 700,
+      margin: 0.08,
       plugins: [
         RevealNotes,
         RevealHighlight,

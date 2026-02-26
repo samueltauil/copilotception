@@ -154,10 +154,18 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 2. **Speaker notes**: Every slide MUST have `<aside class="notes">` with 3-6 sentences of talking points. Notes should include what to say, how to transition, and any objection-handling tips.
 3. **Press S** to open speaker/presenter view — remind user of this.
 4. **No external images** — use inline SVG, Unicode symbols, or CSS-styled elements for visual interest. Use emojis sparingly (1-2 per slide max, only for clarity).
-5. **Keep slide text concise** — max 5 bullet points per slide, max 10 words per bullet.
+5. **Keep slide text concise** — max 5 bullet points per slide, max 8 words per bullet.
 6. **Use the CSS utility classes** already defined in the `<style>` block: `center-slide`, `stat-number`, `highlight-box`, `two-column`, `competitor-table`, `github-icon`, `copilot-logo`, `gradient-text`.
 7. **HTML only** — do not use the Markdown plugin for slides. Write raw HTML `<section>` elements.
 8. **GitHub branding** — the presentation uses GitHub's dark theme colors. Use the Copilot purple-blue gradient (`gradient-text` class) for emphasis text. Use `github-icon` class for styled bullet markers instead of emojis.
+9. **CRITICAL — Slide content MUST fit on screen without scrolling.** The slide viewport is 960×700px. Follow these hard limits to prevent overflow:
+   - Max 4 `highlight-box` elements per slide (keep text inside each to 1 line)
+   - Max 4 bullet points per slide for regular slides, max 5 only for `two-column` layouts (per column)
+   - Max 3 stat blocks on stat slides (one `stat-number` + one short line each)
+   - Competitor table: max 6 rows, keep cell text to 3-4 words
+   - No extra `<p>` or `<div>` wrappers that add vertical space — keep markup flat
+   - Prefer short, punchy text. If a slide feels dense, move content to speaker notes instead
+   - Do NOT add `margin-top` greater than `1em` on any element
 
 ---
 
