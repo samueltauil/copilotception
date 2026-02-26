@@ -180,3 +180,17 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 - Do NOT use external images or assets.
 - Do NOT generate more than 12 slides (keep it tight for a ~15 minute pitch).
 - Do NOT add generic placeholder text like "Lorem ipsum" — every word must be real content.
+- Do NOT commit or push the generated slides to git. The generated content in `src/index.html` is ephemeral — it should remain an uncommitted local change so the template stays clean for re-generation.
+- Do NOT ask the user to commit or push.
+
+---
+
+## After Generating Slides
+
+After filling in the slides, you MUST:
+
+1. **Start a local server** by running `npx serve src -l 8000 --no-clipboard` (or `npm start`).
+2. **Present the URL** to the user: `http://localhost:8000`
+3. **Remind the user** to press **S** to open the speaker/presenter view with notes.
+
+Do this automatically — do not ask for permission or confirmation. The user expects to see the URL immediately after generation.
