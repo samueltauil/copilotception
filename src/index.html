@@ -67,28 +67,313 @@
   <div class="reveal">
     <div class="slides">
 
-      <!--
-        ╔══════════════════════════════════════════════════════════════╗
-        ║  SLIDES GO HERE                                            ║
-        ║                                                            ║
-        ║  Copilot: Replace this comment block with all the          ║
-        ║  presentation slides. Follow the structure defined in      ║
-        ║  .github/copilot-instructions.md exactly.                  ║
-        ║                                                            ║
-        ║  Each slide is a <section> element.                        ║
-        ║  Vertical stacks use nested <section> elements.            ║
-        ║  Speaker notes use <aside class="notes"> inside slides.    ║
-        ║                                                            ║
-        ║  Example slide:                                            ║
-        ║  <section>                                                 ║
-        ║    <h2>Slide Title</h2>                                    ║
-        ║    <p>Content here</p>                                     ║
-        ║    <aside class="notes">                                   ║
-        ║      Speaker notes — what to say during this slide.        ║
-        ║    </aside>                                                ║
-        ║  </section>                                                ║
-        ╚══════════════════════════════════════════════════════════════╝
-      -->
+      <!-- Slide 1 — Title -->
+      <section class="center-slide">
+        <h1>GitHub Copilot</h1>
+        <h3>Your AI-Powered Development Partner</h3>
+        <p style="margin-top: 2em; font-size: 0.8em; color: #8b949e;">Your Name &nbsp;|&nbsp; Microsoft</p>
+        <aside class="notes">
+          <p>Welcome everyone. Today I want to talk about a shift happening in how software gets built — and how your team can stay ahead of it.</p>
+          <p>We'll walk through the real challenges your developers face every day, show you how GitHub Copilot addresses them, and why it's different from anything else on the market.</p>
+          <p>This isn't a feature demo — it's a conversation about developer productivity and business impact.</p>
+          <p>Transition: "Let me start with a question…"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 2 — The Problem -->
+      <section>
+        <h2>What's slowing your developers down?</h2>
+        <ul>
+          <li><span class="emoji-icon">🔍</span> Hours lost searching docs and Stack Overflow</li>
+          <li><span class="emoji-icon">🔄</span> Constant context-switching kills deep focus</li>
+          <li><span class="emoji-icon">🕐</span> New hires take 6–12 months to ramp up</li>
+          <li><span class="emoji-icon">🧩</span> Boilerplate and repetitive code drain energy</li>
+        </ul>
+        <aside class="notes">
+          <p>Ask the audience: "How long does it take a new developer to become productive on your codebase?" Let them reflect.</p>
+          <p>The developer experience problem is universal — whether you have 50 engineers or 5,000. Your best people spend more time searching, reading, and context-switching than actually building.</p>
+          <p>This isn't a skills problem — it's an environment problem. The tools haven't kept up with the complexity of modern software.</p>
+          <p>Transition: "And this problem has a real cost…"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 3 — The Cost of Inaction -->
+      <section>
+        <h2>The cost of doing nothing</h2>
+        <div style="margin-top: 1em;">
+          <p><span class="stat-number">60%</span></p>
+          <p>of developer time is spent on non-coding tasks</p>
+        </div>
+        <div style="margin-top: 1em;">
+          <p><span class="stat-number">$85B</span></p>
+          <p>lost annually to poor developer experience worldwide</p>
+        </div>
+        <div style="margin-top: 1em;">
+          <p><span class="stat-number">4M+</span></p>
+          <p>unfilled software engineering roles globally</p>
+        </div>
+        <aside class="notes">
+          <p>Let each number land. Pause after revealing each stat — silence is powerful here.</p>
+          <p>60% of their day isn't coding — it's reading code they didn't write, sitting in reviews, searching for answers. That's your most expensive talent doing low-leverage work.</p>
+          <p>The talent gap means you can't just hire your way out. You need to multiply the people you already have.</p>
+          <p>If someone pushes back on the $85B figure, it comes from Stripe's developer productivity survey — widely cited in the industry.</p>
+          <p>Transition: "So what if you could give every developer on your team an AI pair programmer?"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 4 — Introducing GitHub Copilot -->
+      <section>
+        <h2>Meet GitHub Copilot</h2>
+        <p style="font-size: 0.9em; color: #8b949e; margin-bottom: 1em;">An AI pair programmer that helps your team code faster, learn faster, and ship faster.</p>
+        <div class="highlight-box">
+          <strong><span class="emoji-icon">⚡</span> Code Completion</strong> — Real-time suggestions as you type, across any language
+        </div>
+        <div class="highlight-box">
+          <strong><span class="emoji-icon">💬</span> Copilot Chat</strong> — Ask questions about your codebase in natural language
+        </div>
+        <div class="highlight-box">
+          <strong><span class="emoji-icon">🖥️</span> Copilot CLI</strong> — AI assistance right in your terminal
+        </div>
+        <div class="highlight-box">
+          <strong><span class="emoji-icon">🔎</span> Code Review & PRs</strong> — Automated review summaries and suggestions
+        </div>
+        <aside class="notes">
+          <p>Position Copilot as a teammate, not just a tool. "Imagine every developer on your team having a senior engineer sitting next to them 24/7."</p>
+          <p>Code completion is where most people start — it's the "wow" moment. But Chat and Code Review are where the real enterprise value compounds.</p>
+          <p>Don't go deep on any single feature here — this is the overview. We'll get into specifics.</p>
+          <p>Transition: "Let me quickly show you how it works under the hood…"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 5 — How It Works -->
+      <section>
+        <h2>How it works — in 30 seconds</h2>
+        <div style="text-align: center; margin-top: 1.5em;">
+          <p style="font-size: 1.2em;">
+            <span class="emoji-icon">📝</span> Your Code Context
+            &nbsp;&rarr;&nbsp;
+            <span class="emoji-icon">🧠</span> AI Model
+            &nbsp;&rarr;&nbsp;
+            <span class="emoji-icon">✨</span> Intelligent Suggestion
+          </p>
+        </div>
+        <div style="margin-top: 2em;">
+          <div class="highlight-box">
+            <strong>Multi-model by design</strong> — Choose from OpenAI GPT-4o, Anthropic Claude, or Google Gemini. Your team picks the best model for the job.
+          </div>
+        </div>
+        <aside class="notes">
+          <p>Keep this simple. The audience doesn't need to understand transformer architecture — they need to know it's context-aware, fast, and flexible.</p>
+          <p>The multi-model point is a differentiator — no other tool gives you this choice. Competitors lock you into a single model. Copilot lets you switch models based on the task.</p>
+          <p>If someone asks about data privacy: your code is NOT used to train models, prompts are discarded after response, and enterprise customers get additional controls.</p>
+          <p>Transition: "So what does this actually mean for your business?"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 6 — Business Impact / Value -->
+      <section>
+        <h2>From developer tool to business impact</h2>
+        <div class="two-column">
+          <div>
+            <h3><span class="emoji-icon">👩‍💻</span> Developer Outcomes</h3>
+            <ul>
+              <li><strong>55% faster</strong> task completion</li>
+              <li><strong>46%</strong> of code written by Copilot</li>
+              <li><strong>75%</strong> feel more fulfilled at work</li>
+              <li>Faster onboarding to new codebases</li>
+            </ul>
+          </div>
+          <div>
+            <h3><span class="emoji-icon">📈</span> Business Outcomes</h3>
+            <ul>
+              <li><strong>2x</strong> shipping velocity (Mercado Libre)</li>
+              <li><strong>30%</strong> higher developer satisfaction (Accenture)</li>
+              <li>Reduced attrition — happier devs stay longer</li>
+              <li>Lower cost per feature shipped</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="notes">
+          <p>This is the slide that wins the executive. Bridge from "cool AI tool" to "this moves the metrics your CFO cares about."</p>
+          <p>The 55% faster stat is from GitHub's own peer-reviewed research — it's been validated independently. The 46% code-written stat comes from aggregate usage data across millions of users.</p>
+          <p>Mercado Libre is a great reference — they're the largest e-commerce platform in Latin America and they publicly shared their Copilot results.</p>
+          <p>If asked about ROI: a developer earning $150K/year who is 55% more productive on coding tasks is worth roughly an additional $40-50K in output annually. Copilot costs $19/month.</p>
+          <p>Transition: "Now, you might be wondering — there are other AI coding tools out there. Why Copilot?"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 7 — Why GitHub Copilot Wins (Differentiation) -->
+      <section>
+        <h2>Why GitHub Copilot wins</h2>
+        <table class="competitor-table">
+          <thead>
+            <tr>
+              <th>Capability</th>
+              <th>GitHub Copilot</th>
+              <th>Cursor</th>
+              <th>Amazon Q</th>
+              <th>Tabnine</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>IDE Coverage</strong></td>
+              <td>VS Code, Visual Studio, JetBrains, Neovim, Xcode</td>
+              <td>Cursor only</td>
+              <td>VS Code, JetBrains</td>
+              <td>Most IDEs</td>
+            </tr>
+            <tr>
+              <td><strong>Model Choice</strong></td>
+              <td>GPT-4o, Claude, Gemini</td>
+              <td>Multiple</td>
+              <td>Amazon only</td>
+              <td>Limited</td>
+            </tr>
+            <tr>
+              <td><strong>IP Indemnity</strong></td>
+              <td>✅ Included</td>
+              <td>❌</td>
+              <td>✅</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td><strong>Enterprise Security</strong></td>
+              <td>SSO, SCIM, Audit Logs, Content Exclusions</td>
+              <td>Basic</td>
+              <td>AWS IAM</td>
+              <td>Basic SSO</td>
+            </tr>
+            <tr>
+              <td><strong>Ecosystem Breadth</strong></td>
+              <td>Chat, CLI, PR Reviews, Extensions, MCP, Coding Agent</td>
+              <td>Editor-only</td>
+              <td>AWS-scoped</td>
+              <td>Completions-focused</td>
+            </tr>
+            <tr>
+              <td><strong>Autonomous Agent</strong></td>
+              <td>✅ Coding Agent (issue → PR)</td>
+              <td>❌</td>
+              <td>Limited</td>
+              <td>❌</td>
+            </tr>
+          </tbody>
+        </table>
+        <aside class="notes">
+          <p>Don't disparage competitors — take the high road. Frame this as "here's what makes Copilot uniquely positioned."</p>
+          <p>Key differentiators to emphasize: (1) Multi-model choice — no vendor lock-in, (2) IP indemnity — legal protection your lawyers will love, (3) Broadest ecosystem — it's a platform, not a feature.</p>
+          <p>If someone brings up Cursor: acknowledge it's a good product for individual devs, but it's a single-IDE tool with no enterprise story. For teams of 100+, you need governance, security, and policy controls.</p>
+          <p>The Coding Agent is the future — Copilot can take a GitHub issue and autonomously produce a pull request. No other tool does this at enterprise scale.</p>
+          <p>Transition: "And speaking of enterprise…"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 8 — Enterprise Ready -->
+      <section>
+        <h2>Built for the enterprise</h2>
+        <ul>
+          <li><span class="emoji-icon">🔐</span> <strong>SSO & SCIM</strong> — Integrate with your identity provider</li>
+          <li><span class="emoji-icon">🛡️</span> <strong>IP Indemnity</strong> — Microsoft stands behind the output</li>
+          <li><span class="emoji-icon">🚫</span> <strong>Content Exclusions</strong> — Block sensitive repos from AI context</li>
+          <li><span class="emoji-icon">📋</span> <strong>Audit Logs</strong> — Full visibility into usage and adoption</li>
+          <li><span class="emoji-icon">⚙️</span> <strong>Policy Controls</strong> — Admins set guardrails org-wide</li>
+        </ul>
+        <div class="highlight-box" style="margin-top: 1em;">
+          <span class="emoji-icon">🏛️</span> SOC 2 Type II compliant &nbsp;·&nbsp; FedRAMP authorization in progress
+        </div>
+        <aside class="notes">
+          <p>This slide is your objection-killer for security and compliance teams. Walk through each item confidently.</p>
+          <p>IP indemnity is huge — Microsoft legally indemnifies customers against copyright claims from Copilot-generated code. This is the "insurance policy" that lets legal sign off.</p>
+          <p>Content exclusions let you say "never send code from our payments repo to the AI" — granular control that security teams need.</p>
+          <p>If asked about data residency: Copilot processes prompts in real-time and does not store them. Enterprise customers get additional data handling commitments in their agreement.</p>
+          <p>Transition: "But don't just take my word for it…"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 9 — Customer Proof Points -->
+      <section>
+        <h2>Trusted by industry leaders</h2>
+        <div class="highlight-box">
+          <strong><span class="emoji-icon">🛒</span> Mercado Libre</strong> — Shipping features <strong>2x faster</strong> after Copilot rollout across 17,000+ developers
+        </div>
+        <div class="highlight-box">
+          <strong><span class="emoji-icon">📊</span> Accenture</strong> — <strong>30% increase</strong> in developer satisfaction; deployed to 50,000+ developers globally
+        </div>
+        <div class="highlight-box">
+          <strong><span class="emoji-icon">🏭</span> Dow</strong> — Accelerated digital transformation with AI-assisted development across manufacturing tech teams
+        </div>
+        <p style="margin-top: 1.5em; font-size: 0.85em; color: #8b949e;">
+          <span class="emoji-icon">🌍</span> <strong>1.3M+ businesses</strong> use GitHub Copilot &nbsp;·&nbsp; Adopted by <strong>Fortune 500</strong> companies across every industry
+        </p>
+        <aside class="notes">
+          <p>Name-dropping matters. If you know the audience's industry, lead with the most relevant case study.</p>
+          <p>Mercado Libre is powerful because 2x shipping velocity is a metric any engineering leader understands. Accenture shows scale — 50K developers is hard to argue with.</p>
+          <p>The 1.3M businesses stat shows this isn't experimental — it's mainstream. From startups to the Fortune 500.</p>
+          <p>If asked for references: we can connect them with customer references in their industry. Offer this proactively.</p>
+          <p>Transition: "Copilot isn't just one tool — it's an entire ecosystem…"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 10 — The Copilot Ecosystem -->
+      <section>
+        <h2>The Copilot ecosystem</h2>
+        <div class="two-column" style="font-size: 0.85em;">
+          <div>
+            <p><span class="emoji-icon">⚡</span> <strong>Code Completion</strong> — Real-time inline suggestions</p>
+            <p><span class="emoji-icon">💬</span> <strong>Copilot Chat</strong> — Natural language Q&A in your IDE</p>
+            <p><span class="emoji-icon">🖥️</span> <strong>Copilot CLI</strong> — AI in the terminal</p>
+            <p><span class="emoji-icon">📝</span> <strong>PR Summaries</strong> — Auto-generated pull request descriptions</p>
+            <p><span class="emoji-icon">🔍</span> <strong>Code Review</strong> — AI-powered review comments</p>
+          </div>
+          <div>
+            <p><span class="emoji-icon">🧠</span> <strong>Workspace</strong> — Multi-file reasoning across your project</p>
+            <p><span class="emoji-icon">🔌</span> <strong>Extensions & MCP</strong> — Connect to your tools and APIs</p>
+            <p><span class="emoji-icon">🤖</span> <strong>Coding Agent</strong> — Autonomous issue-to-PR workflow</p>
+            <p><span class="emoji-icon">📊</span> <strong>Admin Dashboard</strong> — Usage metrics and adoption tracking</p>
+            <p><span class="emoji-icon">🏗️</span> <strong>Custom Instructions</strong> — Tailor Copilot to your standards</p>
+          </div>
+        </div>
+        <aside class="notes">
+          <p>The key message here: Copilot is a platform, not a point solution. It covers the entire developer lifecycle — from writing code to reviewing it to deploying it.</p>
+          <p>The Coding Agent is the headline feature — it can take a GitHub issue, create a branch, write the code, run tests, and open a PR. Autonomously. This is where AI development is heading, and GitHub is already there.</p>
+          <p>MCP (Model Context Protocol) and Extensions mean Copilot integrates with their existing tools — Jira, Datadog, Sentry, internal APIs. It's not a walled garden.</p>
+          <p>Transition: "So here's what I'd suggest as a next step…"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 11 — Call to Action -->
+      <section class="center-slide">
+        <h2>Let's get your team started</h2>
+        <div style="margin: 1.5em 0;">
+          <div class="highlight-box" style="display: inline-block; text-align: center; padding: 1em 2em;">
+            <p style="font-size: 1.2em;"><strong>Start a free trial</strong> — no credit card required</p>
+            <p style="font-size: 0.9em; color: #8b949e;">or let us set up a <strong>Proof of Concept</strong> with your team</p>
+          </div>
+        </div>
+        <p style="font-size: 0.85em; margin-top: 1.5em;">
+          <span class="emoji-icon">📧</span> your.name@microsoft.com &nbsp;&nbsp;|&nbsp;&nbsp;
+          <span class="emoji-icon">🔗</span> github.com/features/copilot
+        </p>
+        <aside class="notes">
+          <p>Be direct and specific. Don't end with "any questions?" — end with a clear ask.</p>
+          <p>Suggest: "I'd love to set up a 30-day pilot with a team of 10-20 developers. We'll help you measure the impact and build the business case internally."</p>
+          <p>If they're not ready for a trial: offer a deeper technical demo, or a session with their security team to address compliance questions.</p>
+          <p>Always leave with a next step on the calendar. "Can we book 30 minutes next week to kick off the pilot?"</p>
+        </aside>
+      </section>
+
+      <!-- Slide 12 — Thank You / Q&A -->
+      <section class="center-slide">
+        <h1>Thank you</h1>
+        <h3 style="color: #8b949e;">Questions & Discussion</h3>
+        <p style="margin-top: 2em; font-size: 0.8em; color: #8b949e;">Press <strong>S</strong> for speaker notes &nbsp;·&nbsp; Arrow keys to navigate</p>
+        <aside class="notes">
+          <p>Open the floor: "What questions do you have? I'm happy to go deeper on any area."</p>
+          <p>Common questions to prepare for: (1) "How does it handle proprietary code?" — Your code is not used for training, prompts are ephemeral. (2) "What about code quality?" — Copilot suggests, developers decide. It's a copilot, not autopilot. (3) "How does pricing work?" — Business plan is $19/user/month, Enterprise is $39/user/month with additional security controls. (4) "Can it work with our internal frameworks?" — Yes, Copilot learns from your codebase context and can be customized with instructions.</p>
+          <p>Close with: "Thanks for your time. I'll follow up with a summary and next steps by end of day."</p>
+        </aside>
+      </section>
 
     </div>
   </div>
