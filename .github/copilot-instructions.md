@@ -77,7 +77,7 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 
 ### Slide 1 — Title Slide
 - Class: `center-slide`
-- Include the GitHub Copilot SVG logo using the `.copilot-logo` class (an `<svg>` inline of the GitHub Copilot icon, or the Octocat mark) styled in the Copilot purple-blue gradient
+- Include the official GitHub Invertocat (Octocat mark) as an inline SVG using the `.copilot-logo` class, filled with the Copilot purple-blue gradient. Use the real GitHub Invertocat SVG path — do NOT use an approximation or placeholder shape.
 - Title: "GitHub Copilot" with a subtitle about AI-powered development
 - Presenter: "Samuel Tauil | Microsoft"
 - Notes: Quick intro, set the stage, mention what you'll cover
@@ -154,6 +154,7 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 2. **Speaker notes**: Every slide MUST have `<aside class="notes">` with 3-6 sentences of talking points. Notes should include what to say, how to transition, and any objection-handling tips.
 3. **Press S** to open speaker/presenter view — remind user of this.
 4. **No external images** — use inline SVG, Unicode symbols, or CSS-styled elements for visual interest. Use emojis sparingly (1-2 per slide max, only for clarity).
+5. **GitHub Logo** — Use the official GitHub Invertocat (Octocat mark) as an inline SVG on the title slide and wherever GitHub branding is needed. The logo should use the Copilot purple-blue gradient fill (`url(#copilot-grad)`). Use the official SVG path for the Invertocat mark (`M12 .297c-6.63...`) sourced from GitHub's brand assets — do NOT use a placeholder or approximation shape.
 5. **Keep slide text concise** — max 5 bullet points per slide, max 8 words per bullet.
 6. **Use the CSS utility classes** already defined in the `<style>` block: `center-slide`, `stat-number`, `highlight-box`, `two-column`, `competitor-table`, `github-icon`, `copilot-logo`, `gradient-text`.
 7. **HTML only** — do not use the Markdown plugin for slides. Write raw HTML `<section>` elements.
