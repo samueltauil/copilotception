@@ -196,10 +196,12 @@ Generate exactly these slides in this order. Each slide is a `<section>` element
 
 ## After Generating Slides
 
-After filling in the slides, you MUST:
+After filling in the slides, you MUST launch the server **idempotently** — every run must succeed regardless of prior state. Follow these steps exactly:
 
-1. **Start a local server** by running `npx serve src -l 8000 --no-clipboard` (or `npm start`).
-2. **Present the URL** to the user: `http://localhost:8000`
-3. **Remind the user** to press **S** to open the speaker/presenter view with notes.
+1. **Kill any existing process on port 8000** before starting a new server. Run: `lsof -ti:8000 | xargs kill -9 2>/dev/null; sleep 1` (this is safe even if nothing is running).
+2. **Start the local server** by running `npx serve src -l 8000 --no-clipboard` (or `npm start`).
+3. **Verify the server is running** by checking the process started and port 8000 is responding (e.g., `curl -s -o /dev/null -w "%{http_code}" http://localhost:8000`). The HTTP status must be `200`. If it is not, diagnose and retry.
+4. **Only after verification succeeds**, present the URL to the user: `http://localhost:8000`
+5. **Remind the user** to press **S** to open the speaker/presenter view with notes.
 
-Do this automatically — do not ask for permission or confirmation. The user expects to see the URL immediately after generation.
+Do this automatically — do not ask for permission or confirmation. The user expects to see a working URL immediately after generation. Never present the URL without first confirming the server is responding.
